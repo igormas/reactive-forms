@@ -21,7 +21,7 @@
     "release": "cd projects/ngneat/reactive-forms && standard-version --infile ../../../CHANGELOG.md",
     "copy": "npm run schematics:copy && cp -r README.md dist/ngneat/reactive-forms",
     "lint:playground": "eslint ./src --ext .ts",
-    "prepare": "npm run build:lib"
+    "prepare": "npm i && npm run build:lib"
   },
   "private": true,
   "dependencies": {
